@@ -1,0 +1,28 @@
+.main {
+    text-align: justify;
+    margin: 0 5em 2em; 
+}
+
+.main-title {
+    font-size: 30px;
+}
+
+.main-subtitle,
+.main-title 
+{
+    font-weight: bold;
+    margin: 0 0 .5em .3em;
+}
+
+p {margin: 1em 0;}
+
+ul {margin-bottom: 1em;}
+
+.robot-btn {
+    position: fixed;
+    top: 0;
+    margin: 1.2em;
+    background-color: orange;
+    padding: .5em;
+    border-radius: 5px;
+}
