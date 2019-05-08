@@ -1,0 +1,11 @@
+@media (min-height: 600px) {
+
+	main {margin-bottom: 25vh;}	
+	
+}
+
+@media (min-height: 750px) {
+
+	main {margin-bottom: 40vh;}	
+	
+}
