@@ -1,0 +1,122 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #e3e3e3; 
+    background: linear-gradient(to bottom, #595a5b, #ff7f00);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
+}
+.corpse {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.corpse h1 {
+    font-weight: 200;
+    text-align: center;
+}
+.loading {
+    line-height:1.4;
+    font-size:1rem;
+    font-weight: bold;
+    text-align:center;
+    max-width: 30%;
+}
+.loading__author {
+    font-size:0.6rem;
+    color:rgba(189,189,189,1);
+    margin:0.6rem 0 2rem 0;
+    display:block;
+}
+.loading__anim {
+    width:120px;
+    height: 120px;
+    display: inline-block;
+    border: 5px solid rgba(189,189,189,0.25);
+    border-left-color: #fff;
+    border-top-color: #fff;
+    border-radius:50%;
+    animation: rotate 3500ms infinite linear;
+}
+.loading__anim:hover {
+    animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+    to {
+    transform: rotate(1turn)
+    }
+}
+.ask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 615px;
+    margin: 0 auto;
+}
+ h3 {
+    color: #fff;
+    font-weight: 200;
+    align-self: flex-start
+}  
+
+.search {
+    width: 615px;
+    height: 35px;
+    border: .5px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    padding: 5px;
+}
+.send {
+    width: 125px;
+    height: 30px;
+    border: .5px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 10px;
+    transition:.3s;
+    align-self: flex-end;
+
+}
+
+.send:hover {
+    background-color: #595a5b;
+    border: none;
+    cursor: pointer;
+}
+
+textarea {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    color: white;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width:615px;
+}
+
+@media (max-width: 768px) {
+    .answer, .ask, .search {
+        width: 80%;
+    }
+}
+@media (min-height: 1024px) {
+    html {
+        height: 100%;
+    }
+}
