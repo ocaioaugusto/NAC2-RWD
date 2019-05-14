@@ -6,7 +6,8 @@
 		border: 1px #ff7f00 solid;
 		border-radius: 4px; 
 
-	    margin: 1em 10em;
+		max-width: 90%;
+	    margin: 0 auto;
 	}
 
 	.nav li{
@@ -18,4 +19,3 @@
 	    padding: .5em 2em;
 	}
 
-	.nav li:hover {background-color: orange;}

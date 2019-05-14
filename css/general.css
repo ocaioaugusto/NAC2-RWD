@@ -2,13 +2,12 @@
 	@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 	body {
-		font-size: 1.4em;
 		font-family: 'Montserrat', sans-serif;
-		background-color: #FDF8E0;
+		font-size: 1.2em;
 	}
 
 	main {
-		margin: 5em 0 10em;
+		margin-bottom: 10em;
 	}
 
 	a {
@@ -19,9 +18,12 @@
 	/*header*/
 
 	.logo-img {
-		max-width: 100%;
-		text-align: center;
+		text-align: center;		
 	}
+
+		.logo-img img {
+			max-width: 70%;
+		}
 
 	/*footer*/
 

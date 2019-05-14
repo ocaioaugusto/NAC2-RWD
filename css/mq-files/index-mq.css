@@ -1,0 +1,12 @@
+@media (min-width: 450px) {
+
+	.nav {max-width: 80%;}
+
+}
+
+@media (min-width: 1000px) {
+
+	.nav {max-width: 80%;}
+
+	.nav li:hover {background-color: orange;}
+}
