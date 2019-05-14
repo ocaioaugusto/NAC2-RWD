@@ -5,6 +5,8 @@
 
 .main-title {
     font-size: 30px;
+    text-align: center;
+    margin: 1em 0;
 }
 
 .main-subtitle,
@@ -28,7 +30,7 @@ ul {margin-bottom: 1em;}
     margin: 1.2em;
 
     background-color: orange;
-    
+
     padding: .5em;
     border-radius: 5px;
 }
