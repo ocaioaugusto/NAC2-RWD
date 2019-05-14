@@ -1,6 +1,6 @@
 .main {
-    text-align: justify;
-    margin: 0 5em 2em; 
+    max-width: 80%;
+    margin: 0 auto 1.5em; 
 }
 
 .main-title {
