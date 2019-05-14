@@ -4,8 +4,14 @@
 	
 }
 
-@media (min-height: 750px) {
+@media (min-height: 620px) {
 
 	main {margin-bottom: 40vh;}	
+	
+}
+
+@media (min-height: 1000px) {
+
+	main {margin-bottom: 60vh;}	
 	
 }
