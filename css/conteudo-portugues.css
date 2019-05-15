@@ -26,7 +26,7 @@
         padding: .5em;
         border-radius: 5px;
     }
-    
+
     .main-title {
         font-size: 30px;
         font-weight: bold;
@@ -46,3 +46,13 @@
 
     ul {margin-bottom: 1em;}
 
+    .top-go {
+        display: block;
+        
+        text-align: center;
+        opacity: 0.4;
+
+        max-width: 50%;
+        margin: .5em auto;
+        padding: .5em;
+    }
