@@ -5,13 +5,12 @@
 
 .main-title {
     font-size: 30px;
+    font-weight: bold;
     text-align: center;
     margin: 1em 0;
 }
 
-.main-subtitle,
-.main-title 
-{
+.main-subtitle {
     font-weight: bold;
     margin: 0 0 .5em .3em;
 }
