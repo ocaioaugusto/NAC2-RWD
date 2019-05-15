@@ -31,16 +31,37 @@
             font-size: 16px;
             padding: 5px;
         }
-
-        .registerLines {
-            margin: 15px;
-        }
         
         p {
             line-height: 5px;
         }
 
 
+        form div {
+            position: relative;
+        }
+
+        .inputInfo {
+            margin: 30px 0;
+        }
+
+        label {
+            position: absolute;
+            top: 10px;
+            padding-left: 5px;
+            color: #999;
+            transition: .5s;
+            pointer-events: none;
+        }
+
+        form div input:focus ~ label,
+        form div input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: orange;
+            font-size: 12px;
+            font-weight: bold;
+        }
 
     </style>
 
@@ -48,32 +69,40 @@
     <body>
         <div id="register" class="">
             <form>
-                <h1 style="text-align: center;">Cadastro</h1> 
-                <div class="registerLines">
-                    <input id="usernamesignup" name="name" required="required" type="text" placeholder="Nome" />
-                    
-                    <input id="usernamesignup" name="lastname" required="required" type="text" placeholder="Sobrenome" />
+                <h1 style="text-align: center;">Cadastro</h1>
+                
+                <div class="inputInfo">
+                    <input id="usernamesignup" name="name" required="required" type="text" />
+                    <label>Nome</label>
                 </div>
 
-                <div class="registerLines">
-                    <input id="username" name="username" required="required" type="text" placeholder="Usuário" />
-                   
-                    <input id="email" name="email" required="required" type="email" placeholder="Email"/> 
+                <div class="inputInfo">
+                    <input id="usernamesignup" name="lastname" required="required" type="text"/>
+                    <label>Sobrenome</label>
                 </div>
 
-                <div class="registerLines">
-                    <input id="password" name="password" required="required" type="password" placeholder="Senha"/>
-                    
-                    <input id="confirmpassword" name="confirmpassword" required="required" type="password" placeholder="Confirmar senha"/>
+                <div class="inputInfo">
+                    <input id="username" name="username" required="required" type="text"/>
+                    <label>Nome de usuário</label>
+                </div>
+                <div class="inputInfo">
+                    <input id="email" name="email" required="required" type="email"/> 
+                    <label>Email</label>
+                </div>
+
+                <div class="inputInfo">
+                    <input id="password" name="password" required="required" type="password"/>
+                    <label>Senha</label>
+                </div>
+                <div class="inputInfo">
+                    <input id="confirmpassword" name="confirmpassword" required="required" type="password"/>
+                    <label>Confirmar senha</label>
                 </div> 
-
-                <p class="signup"> 
+                <p> 
                     <input style="height: 30px; width: 150px" type="submit" value="Cadastrar"/> 
                 </p>
-                <p class="change_link">  
                     Já está cadastrado?
                     <a href="#tologin" class="to_register">Faça o login</a>
-                </p>
             </form>
         </div>
     </body>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+
+<style>
+
+    
+    body {
+        font-family: 'Montserrat', Arial; 
+    }
+
+    #login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 250px;
+        height: 20px;
+        border: .5px solid black;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    p {
+        line-height: 5px;
+        }
+
+    form div {
+        position: relative;
+    }
+
+    .inputInfo {
+        margin: 30px 0;
+    }
+
+    label {
+        position: absolute;
+        top: 10px;
+        padding-left: 5px;
+        color: #999;
+        transition: .5s;
+        pointer-events: none;
+    }
+
+    form div input:focus ~ label,
+    form div input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: orange;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+
+</style>
+
+
+<body>
+
+    <div id="login">
+        <form>
+            <h1>Faça o seu login para acessar o Sirius</h1>
+
+            <div class="inputInfo">
+                <input id="email" name="email" required="required" type="email"/> 
+                <label>Email</label>
+            </div>
+
+            <div class="inputInfo">
+                <input id="password" name="password" required="required" type="password"/>
+                <label>Senha</label>
+            </div>
+
+            <p> 
+                <input style="height: 30px; width: 150px" type="submit" value="Login"/> 
+            </p>
+
+            Ainda não tem cadastro?
+            <a href="#toregister" class="to_register">Cadastre-se aqui</a>
+
+
+        </form>
+    </div>
+    
+
+
+    
+</body>
+</html>
