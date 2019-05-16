@@ -5,7 +5,9 @@
 }
 
 @media (min-width: 1000px) {
-	
+
+	.nav {max-width: 65%;}
+
 	.nav li:hover {
 		border-bottom: 1px #ff7f00 solid;
 		border-top: 1px #ff7f00 solid;
