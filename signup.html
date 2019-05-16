@@ -27,6 +27,7 @@
             width: 430px;
             height: 565px;
             border: 1px solid orange;
+            box-shadow: 10px 13px 59px -11px rgba(0,0,0,0.63);
             border-radius: 10px
         }
 
@@ -115,11 +116,19 @@
                     <label>Confirmar senha</label>
                 </div> 
                 <p style="display: flex"> 
-                    <input type="submit" class="button" value="Cadastrar"/> 
+                    <input type="submit" onclick="signUp()" class="button" value="Cadastrar"/> 
                 </p>
                     Já está cadastrado?
                     <a href="login.html" class="to_register">Faça o login</a>
             </form>
         </div>
     </body>
+
+    <script>
+        function signUp(){
+            window.location='conteudo-portugues.html';
+        }
+    </script>
+
+
 </html>
