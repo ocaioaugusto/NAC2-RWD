@@ -1,14 +1,27 @@
+/*header*/
+
+	.header {
+		margin-bottom: 2em;
+	}
+
+	.title {
+		text-align: center;
+	    padding: .5em;
+	    background-color: #ff7f00;
+	}
+
 /*main*/
 
 	.main-title {
 	    text-align: center;
-    	margin: .5em 0 1em;
+	    max-width: 80%;
+    	margin: 0 auto .5em;
 	}
 
 	.nav {
 		text-align: center;
 
-		border: 1px #ff7f00 solid;
+		border-bottom: 1px #ff7f00 solid;
 		border-radius: 4px; 
 
 		max-width: 90%;
@@ -17,6 +30,10 @@
 
 	.nav li{
 		display: inline-block;
+
+		/* It's suppose to be shown just on hover ! */
+		border-bottom: 1px white solid;
+		border-top: 1px white solid;
 
 		border-radius: 4px;
 
