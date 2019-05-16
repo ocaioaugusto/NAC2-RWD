@@ -5,9 +5,10 @@
 	}
 
 	.title {
+		font-weight: bold;
 		text-align: center;
+		color: #3078BD;
 	    padding: .5em;
-	    background-color: #ff7f00;
 	}
 
 /*main*/
@@ -21,7 +22,7 @@
 	.nav {
 		text-align: center;
 
-		border-bottom: 1px #ff7f00 solid;
+		border-bottom: 1px #3078BD solid;
 		border-radius: 4px; 
 
 		max-width: 90%;
