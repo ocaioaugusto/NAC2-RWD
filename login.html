@@ -24,6 +24,7 @@
         align-content: center;
         align-items: center;
         border: 1px solid orange;
+        box-shadow: 10px 13px 59px -11px rgba(0,0,0,0.63);
         border-radius: 10px;
         height: 435px;
         width: 350px;
@@ -108,14 +109,20 @@
             </div>
 
             <a href="conteudo-portugues.html" style="display: flex; margin: 15px auto"> 
-                    <input type="submit" class="button" value="Login"/> 
+                    <input type="submit" onclick="signIn()" class="button" value="Login"/> 
             </a>
 
             Ainda não tem cadastro?
             <a  style="margin-top: 5px" href="signup.html" class="to_register">Cadastre-se aqui</a>
+            
         </form>
     </div>
     
+    <script>
+        function signIn(){
+            window.location='conteudo-portugues.html';
+        }
+    </script>
 
 
     
