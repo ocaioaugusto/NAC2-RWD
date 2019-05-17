@@ -6,87 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cadastro</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/signup.css" />
+        <script src="js/signup.js"></script>
     </head>
-
-    <style>
-
-        body {
-            font-family: 'Montserrat', Arial;
-            height: 95vh;
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-        }
-
-        #register {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 430px;
-            height: 565px;
-            border: 1px solid orange;
-            box-shadow: 10px 13px 59px -11px rgba(0,0,0,0.63);
-            border-radius: 10px
-        }
-
-        input {
-            width: 250px;
-            height: 20px;
-            border: .5px solid black;
-            border-radius: 10px;
-            background-color: transparent;
-            font-size: 16px;
-            padding: 5px;
-        }
-        
-        p {
-            line-height: 5px;
-        }
-
-
-        form div {
-            position: relative;
-        }
-
-        .button { 
-            height: 30px;
-            width: 150px; 
-            margin: 0 auto;
-            font-weight: bold;
-            background-color: orange;
-            cursor: pointer;
-        }
-
-        .inputInfo {
-            margin: 30px 0;
-        }
-
-        label {
-            position: absolute;
-            top: 10px;
-            padding-left: 10px;
-            color: #999;
-            transition: .5s;
-            pointer-events: none;
-        }
-
-        form div input:focus ~ label,
-        form div input:valid ~ label {
-            top: -20px;
-            left: 0;
-            color: orange;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-    </style>
-
 
     <body>
         <div id="register" class="">
-            <form>
+            <form onsubmit="return checkPassword(this), emailIsValid(this)" action="index.html" method="POST">
                 <h1 style="text-align: center;">Cadastro</h1>
                 
                 <div class="inputInfo">
@@ -112,23 +38,15 @@
                     <label>Senha</label>
                 </div>
                 <div class="inputInfo">
-                    <input id="confirmpassword" name="confirmpassword" required="required" type="password"/>
+                    <input id="confirmpassword" name="confirmpassword" required="required"  type="password"/>
                     <label>Confirmar senha</label>
                 </div> 
                 <p style="display: flex"> 
-                    <input type="submit" onclick="signUp()" class="button" value="Cadastrar"/> 
+                    <input type="submit" class="button" required="required" value="Cadastrar"/> 
                 </p>
                     Já está cadastrado?
-                    <a href="login.html" class="to_register">Faça o login</a>
+                    <a href="login.html" class="to_login">Faça o login</a>
             </form>
         </div>
     </body>
-
-    <script>
-        function signUp(){
-            window.location='conteudo-portugues.html';
-        }
-    </script>
-
-
 </html>

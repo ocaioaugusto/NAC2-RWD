@@ -4,98 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
 
-<style>
-
-    
-    body {
-        font-family: 'Montserrat', Arial; 
-        height: 95vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #login {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        border: 1px solid orange;
-        box-shadow: 10px 13px 59px -11px rgba(0,0,0,0.63);
-        border-radius: 10px;
-        height: 435px;
-        width: 350px;
-        justify-content: center;
-    }
-
-    input {
-        width: 250px;
-        height: 20px;
-        border: .5px solid black;
-        border-radius: 10px;
-        background-color: transparent;
-        font-size: 16px;
-        padding: 5px;
-    }
-
-    p {
-        line-height: 5px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    form div {
-        position: relative;
-    }
-
-    .inputInfo {
-        margin: 15px 0;
-        display: flex;
-    }
-
-    .button { 
-        height: 30px;
-        width: 150px; 
-        margin: 0 auto;
-        background-color: orange;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    label {
-        position: absolute;
-        top: 10px;
-        padding-left: 10px;
-        color: #999;
-        transition: .5s;
-        pointer-events: none;
-    }
-
-    form div input:focus ~ label,
-    form div input:valid ~ label {
-        top: -20px;
-        left: 0;
-        color: orange;
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-
-</style>
-
-
 <body>
-
     <div id="login">
-        <form>
+        <form action="/index.html" method="POST">
             <h1>Login</h1>
 
             <div class="inputInfo">
@@ -109,22 +24,12 @@
             </div>
 
             <a href="conteudo-portugues.html" style="display: flex; margin: 15px auto"> 
-                    <input type="submit" onclick="signIn()" class="button" value="Login"/> 
+                    <input type="submit" class="button" value="Login"/> 
             </a>
-
-            Ainda não tem cadastro?
+                Ainda não tem cadastro?
             <a  style="margin-top: 5px" href="signup.html" class="to_register">Cadastre-se aqui</a>
             
         </form>
-    </div>
-    
-    <script>
-        function signIn(){
-            window.location='conteudo-portugues.html';
-        }
-    </script>
-
-
-    
+    </div>  
 </body>
 </html>

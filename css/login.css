@@ -1,0 +1,78 @@
+  
+    body {
+        font-family: 'Montserrat', Arial; 
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        border: 1px solid #3078BD;
+        box-shadow: 10px 13px 59px -11px rgba(0,0,0,0.63);
+        border-radius: 10px;
+        height: 435px;
+        width: 350px;
+        justify-content: center;
+    }
+
+    input {
+        width: 250px;
+        height: 20px;
+        border: .5px solid black;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    p {
+        line-height: 5px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    form div {
+        position: relative;
+    }
+
+    .inputInfo {
+        margin: 15px 0;
+        display: flex;
+    }
+
+    .button { 
+        height: 30px;
+        width: 150px; 
+        margin: 0 auto;
+        background-color: #3078BD;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    label {
+        position: absolute;
+        top: 10px;
+        padding-left: 10px;
+        color: #999;
+        transition: .5s;
+        pointer-events: none;
+    }
+
+    form div input:focus ~ label,
+    form div input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #3078BD;
+        font-size: 12px;
+        font-weight: bold;
+    }
