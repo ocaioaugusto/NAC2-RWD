@@ -1,14 +1,11 @@
 /*header*/
 
 	.header {
-		margin-bottom: 2em;
+		margin: .5em 0 2em;
 	}
 
-	.title {
-		font-weight: bold;
+	.figure {
 		text-align: center;
-		color: #3078BD;
-	    padding: .5em;
 	}
 
 /*main*/
