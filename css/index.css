@@ -1,26 +1,21 @@
 /*header*/
 
-	.header {
-		margin: .5em 0 2em;
-	}
+	.header {margin: .5em 0 2em;}
 
-	.figure {
-		text-align: center;
-	}
+	.figure {text-align: center;}
 
 /*main*/
+
+	.main {margin: 20vh 0;}
 
 	.main-title {
 	    text-align: center;
 	    max-width: 80%;
-    	margin: 0 auto .5em;
+    	margin: 0 auto 1em;
 	}
 
 	.nav {
 		text-align: center;
-
-		border-bottom: 1px #3078BD solid;
-		border-radius: 4px; 
 
 		max-width: 90%;
 	    margin: 0 auto;
@@ -29,13 +24,10 @@
 	.nav li{
 		display: inline-block;
 
-		/* It's suppose to be shown just on hover ! */
-		border-bottom: 1px white solid;
-		border-top: 1px white solid;
+		box-shadow: 4px 4px 20px 0 rgba(31, 106, 175,.3);
 
 		border-radius: 4px;
 
-		margin: .2em 1em;
-	    padding: .5em 2em;
+		margin: 1em;
+	    padding: 1em 2em;
 	}
-
